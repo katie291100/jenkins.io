@@ -48,3 +48,5 @@
               - components.each do | component |
                 = "<li>Affects #{component.title || component.name}</li>"
               = "</ul>".encode(xml: :text)
+          %severity
+          - site._generated[:update_center].id
